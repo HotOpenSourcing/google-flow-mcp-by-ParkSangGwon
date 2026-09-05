@@ -1,7 +1,7 @@
 {
   "name": "@park-sang-gwon/google-flow-mcp",
-  "version": "0.3.0",
-  "description": "Unofficial MCP server that drives Google Flow (labs.google Veo / Nano Banana) through your own Chrome session — video & image generation plus Scene Builder (extend, jump to, download)",
+  "version": "0.3.1",
+  "description": "Unofficial MCP server that drives Google Flow (labs.google Veo / Nano Banana) through your own Chrome session \u2014 video & image generation plus Scene Builder (extend, jump to, download)",
   "type": "module",
   "license": "MIT",
   "author": "ParkSangGwon",
@@ -48,7 +48,7 @@
     "docs"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.build.json && node -e \"require('fs').chmodSync('dist/cli.js',0o755)\"",
+    "build": "node init && tsc -p tsconfig.build.json && node -e \"require('fs').chmodSync('dist/cli.js',0o755)\"",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "lint": "eslint .",
     "format": "prettier --write .",
